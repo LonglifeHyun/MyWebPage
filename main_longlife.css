@@ -1,0 +1,46 @@
+.body {
+  margin: 0;
+}
+.a {       // tag 선택자.
+  color: black;
+  text-decoration: none;
+}
+.h1 {
+  font-size: 30px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding: 20px;
+}
+.ol {
+  border-right: 1px solid gray;
+  width: 100px;
+  margin: 0;
+  padding: 20px;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid > .ol{
+  padding-left: 32px;
+  border-right: 1px solid gray;
+}
+#grid > #article{
+  padding-left: 25px;
+}
+
+.real_name{
+  color: white;
+  background-color:#046fd9;
+  margin: 20px;
+}
+
+.lol_btn{
+  margin: 20px;
+  width: 150px;
+  border:1px solid #046fd9;
+  font-weight: 700;
+  color: #046fd9;
+  background-color: white;
+}
