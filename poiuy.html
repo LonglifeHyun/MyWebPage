@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <title></title>
+
+    <style type="text/css">
+        .css_test img {
+            margin-bottom : 20px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function j_test(n){
+            $('html, body').stop().animate({
+                scrollTop : $('.css_test img').eq(n).offset().top
+            });
+        }
+    </script>
+  </head>
+  <body>
+
+    <div style="text-align: center;">
+      <div class="css_test">
+          <img src="images\narrrr.png" alt="narrrr" width="50%" /><br>
+          <img src="images\cow.png" /><br>
+          <img src="images\salmon.png" /><br>
+      </div>
+      <br><br>
+      <button type="button" onclick="j_test(0)">첫번째 이미지 위치로 이동</button><br>
+      <button type="button" onclick="j_test(1)">두번째 이미지 위치로 이동</button><br>
+      <button type="button" onclick="j_test(2)">세번째 이미지 위치로 이동</button><br>
+    </div>
+
+  </body>
+</html>
